@@ -28,6 +28,21 @@ public class Main {
             if ( comet % 79 == 0)
             System.out.println(comet);
         }
+        System.out.println();
+
+        System.out.println("Задание 4");
+        for (int c = 1; c <= 30; c++) {
+            if (c % 3 == 0 && c % 5 == 0 ) {
+                System.out.println(c + ": ping pong");
+            } else if (c % 3 == 0){
+                System.out.println(c + ": ping");
+            }  else if (c % 5 == 0) {
+                System.out.println(c + ": pong");
+            }  else if (c % 3 != 0 && c % 5 != 0) {
+                System.out.println(c);
+            }
+
+        }
     }
 }
 
