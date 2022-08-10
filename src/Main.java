@@ -25,25 +25,40 @@ public class Main {
         for (int start = 79; start <= yearStop; start = start + 79) {
         }
         for (int comet = yearNow - 200; comet <= yearStop; comet++ ) {
-            if ( comet % 79 == 0)
+            if (comet % 79 == 0)
             System.out.println(comet);
         }
         System.out.println();
 
         System.out.println("Задание 4");
         for (int c = 1; c <= 30; c++) {
-            if (c % 3 == 0 && c % 5 == 0 ) {
+            if (c % 3 == 0 && c % 5 == 0) {
                 System.out.println(c + ": ping pong");
-            } else if (c % 3 == 0){
+            } else if (c % 3 == 0) {
                 System.out.println(c + ": ping");
-            }  else if (c % 5 == 0) {
+            } else if (c % 5 == 0) {
                 System.out.println(c + ": pong");
-            }  else if (c % 3 != 0 && c % 5 != 0) {
+            } else {
                 System.out.println(c);
             }
+        }
+        System.out.println();
+
+        System.out.println("Задание 5");
+        int i = 0;
+        int j = 1;
+        System.out.print(i + " " + j + " ");
+        int f;
+        for (int f0 = 2; f0 < 10; f0++) {
+            f = i + j;
+            i = j;
+            j = f;
+            System.out.print(f + " ");
+        }
+
 
         }
     }
-}
+
 
 
