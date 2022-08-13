@@ -21,9 +21,6 @@ public class Main {
         System.out.println("Задание 3");
         int yearNow = 2022;
         int yearStop = yearNow + 100;
-
-        for (int start = 79; start <= yearStop; start = start + 79) {
-        }
         for (int comet = yearNow - 200; comet <= yearStop; comet++ ) {
             if (comet % 79 == 0)
             System.out.println(comet);
